@@ -110,7 +110,8 @@ export default [
   },
   {
     files: [
-      "electron/**/*"
+      "electron/**/*",
+      "vite.config.mjs"
     ],
     rules: {
       "no-undef": "off"
