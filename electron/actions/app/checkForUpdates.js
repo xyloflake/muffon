@@ -9,7 +9,7 @@ import {
 } from 'electron-updater'
 import {
   isMac
-} from '#/utils/helpers/utils'
+} from '#/helpers/utils'
 import i18n from 'i18n'
 
 let latestRelease
