@@ -56,7 +56,7 @@ function isHarmfulSwitchesPresent () {
   return false
 }
 
-export const appName = 'muffon'
+export const appName = 'Muffon'
 
 export const handleHarmfulSwitches = () => {
   if (isHarmfulSwitchesPresent()) {

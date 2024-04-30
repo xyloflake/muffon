@@ -54,7 +54,7 @@
   ],
   "protocols": [
     {
-      "name": "muffon",
+      "name": "Muffon",
       "schemes": [
         "muffon"
       ],
