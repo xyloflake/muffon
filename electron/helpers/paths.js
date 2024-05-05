@@ -6,10 +6,10 @@ import {
 } from 'path'
 import {
   isDevelopment
-} from '#/helpers/utils'
+} from './utils.js'
 import {
   fileRootPath as formatFileRootPath
-} from '#/helpers/formatters'
+} from './formatters.js'
 
 const developmentUserDataPath =
   formatFileRootPath(

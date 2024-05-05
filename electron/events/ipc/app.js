@@ -11,7 +11,7 @@ import {
   handleNavigate,
   handleCallOpenDeepLink,
   handleExit
-} from '#/handlers/ipc/app'
+} from '../../handlers/ipc/app.js'
 
 export default function () {
   ipcMain.on(

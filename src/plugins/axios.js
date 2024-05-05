@@ -1,7 +1,9 @@
 import axios from 'axios'
 
-const isDevelopment =
-  process.env.NODE_ENV === 'development'
+const isDevelopment = (
+  import.meta.env.MODE ===
+    'development'
+)
 
 const developmentBaseUrl =
   'http://localhost:4000'
