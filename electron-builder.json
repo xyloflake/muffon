@@ -1,5 +1,5 @@
 {
-  "appId": "com.electron.muffon",
+  "appId": "com.staniel359.muffon",
   "copyright": "Copyright © 2020-2024 Aleksey Shpakovsky",
   "win": {
     "icon": "build/icons/icon.ico",
@@ -36,16 +36,20 @@
     "oneClick": false,
     "perMachine": true
   },
+  "flatpak": {
+    "runtimeVersion": "23.08",
+    "baseVersion": "23.08"
+  },
   "portable": {
     "artifactName": "${productName}-${version}-${os}-${arch}-portable.${ext}",
   },
   "directories": {
     "buildResources": "build",
-    "output": "package_electron"
+    "output": "build_electron"
   },
   "files": [
     "./.env",
-    "./build_electron/**/*",
+    "./electron/**/*",
     "./index.html",
     {
       "from": "./build",
