@@ -3,7 +3,7 @@
   "version": "2.0.4-beta.9",
   "description": "Advanced multi-source music streaming + discovery client",
   "homepage": "https://muffon.netlify.app",
-  "repository": "https://github.com/xyloflake/muffon",
+  "repository": "https://github.com/muffonlabs/mufbeta",
   "license": "AGPL-3.0",
   "author": {
     "name": "Aleksey Shpakovsky",
