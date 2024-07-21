@@ -1,4 +1,8 @@
 import getElectronStoreKey from '../electronStore/getKey.js'
+import {
+  isWindows,
+  isMacos
+} from '../../helpers/utils.js'
 
 export default function (
   tab
@@ -20,13 +24,19 @@ export default function (
     isFullScreen ? 0 : topOffsetScaled
   )
 
+  const extraTopOffset = (
+    (isWindows || isMacos) ? 28 : 0
+  )
+
   const [
     width,
     height
   ] = mainWindow.getSize()
 
   const heightScaled = (
-    height - topOffsetComputed
+    height -
+      topOffsetComputed -
+      extraTopOffset
   )
 
   const options = {
