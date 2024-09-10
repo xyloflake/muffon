@@ -1,5 +1,5 @@
 {
-  "appId": "com.electron.muffon",
+  "appId": "com.beta.muffon",
   "copyright": "Copyright © 2020-2024 Aleksey Shpakovsky",
   "win": {
     "icon": "build/icons/icon.ico",
