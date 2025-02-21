@@ -87,7 +87,7 @@ jobs:
           ELECTRON_BUILDER_CACHE: ${{ github.workspace }}/.cache/electron-builder
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: pnpm build
-      - name: Release
+      - name: Release Windows
         if: matrix.os == 'windows-latest'
         env:
           ELECTRON_CACHE: ${{ github.workspace }}/.cache/electron
@@ -106,7 +106,7 @@ jobs:
           pnpm release:electron & \
           wait
           
-      - name: Release linux arm64 # to prevent unnecessary build locally
+      - name: Release linux # to prevent unnecessary build locally
         if: matrix.os == 'ubuntu-latest'
         env:
           ELECTRON_CACHE: ${{ github.workspace }}/.cache/electron
